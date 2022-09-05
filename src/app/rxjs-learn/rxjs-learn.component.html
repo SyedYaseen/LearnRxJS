@@ -1,0 +1,13 @@
+<p>Name is {{agentName}}</p>
+<p>{{observableWithFrom}}</p>
+
+<button #myBtn (click)="ObsFromEvent()">Obs from Event</button>
+
+<div [formGroup]="searchForm">
+    <input type="text" formControlName="search" (keyup)="keyUp()" >
+    <input type="text" formControlName="another" (keyup)="keyUp()" >
+</div>
+
+
+<button (click)="subs()">Subscribe</button>
+<button (click)="unsubs()">Unsubs</button>
