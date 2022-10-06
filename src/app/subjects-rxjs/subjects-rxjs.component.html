@@ -1,0 +1,13 @@
+<p>subjects-rxjs works!</p>
+<ng-container *ngIf="false   else thisTemplate">
+    <p  >This piece of code will not render</p>
+</ng-container>
+
+<!--<input [(ngModel)]="example">-->
+<input [value]="example" (change)="assign()" #inputRef >
+<button (click)="logValue()">Log it</button>
+
+<ng-template #thisTemplate>
+    <p appHostBind>This template will render</p>
+</ng-template>
+
